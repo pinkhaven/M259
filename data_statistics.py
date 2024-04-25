@@ -1,9 +1,9 @@
 import pandas
 import matplotlib.pyplot as plt
 
-# Loading Datasets
-abalone_attributes = pandas.read_excel('./Data/abalone_attributes.xlsx')
-abalone_targets = pandas.read_excel('./Data/abalone_targets.xlsx')
+# Loading the Datasets
+abalone_attributes = pandas.read_excel('./Data/abalone_attributes_cleaned.xlsx')
+abalone_targets = pandas.read_excel('./Data/abalone_targets_cleaned.xlsx')
 
 # Statistic Information on each attribute
 statistics_attributes = abalone_attributes.describe()

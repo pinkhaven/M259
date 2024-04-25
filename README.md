@@ -1,2 +1,3 @@
-# M259
-Small Machine-Lerning Python Project
+# M259 | Machine-Learning
+
+This is a small Machine-Learning Project in Python. 

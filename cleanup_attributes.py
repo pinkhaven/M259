@@ -38,4 +38,4 @@ abalone_dataset['Sex'] = abalone_dataset['Sex'] / max(abalone_dataset['Sex'])
 abalone_dataset = abalone_dataset.head(1000)
 
 # Export the cleaned Dataset
-abalone_dataset.to_excel('abalone_cleaned.xlsx', index=False)
+abalone_dataset.to_excel('abalone_attributes_cleaned.xlsx', index=False)

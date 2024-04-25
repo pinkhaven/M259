@@ -1,7 +1,7 @@
 import pandas
 
 # Loading the Dataset
-abalone_dataset = pandas.read_excel('abalone_targets.xlsx')
+abalone_dataset = pandas.read_excel('./Data/abalone_targets.xlsx')
 
 # Check for empty values
 print(abalone_dataset.isna().sum())
@@ -19,5 +19,5 @@ abalone_dataset = abalone_dataset.drop_duplicates()
 abalone_dataset = abalone_dataset.head(1000)
 
 # Export the cleaned Dataset
-abalone_dataset.to_excel('abalone_targets_cleaned.xlsx', index=False)
+abalone_dataset.to_excel('./Data/abalone_targets_cleaned.xlsx', index=False)
 

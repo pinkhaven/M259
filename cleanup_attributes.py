@@ -2,7 +2,7 @@ import pandas
 from sklearn import preprocessing
 
 # Loading the Dataset
-abalone_dataset = pandas.read_excel('abalone_features.xlsx')
+abalone_dataset = pandas.read_excel('./Data/abalone_attributes.xlsx')
 
 # Check for empty values
 print(abalone_dataset.isna().sum())
@@ -38,4 +38,4 @@ abalone_dataset['Sex'] = abalone_dataset['Sex'] / max(abalone_dataset['Sex'])
 abalone_dataset = abalone_dataset.head(1000)
 
 # Export the cleaned Dataset
-abalone_dataset.to_excel('abalone_attributes_cleaned.xlsx', index=False)
+abalone_dataset.to_excel('./Data/abalone_attributes_cleaned.xlsx', index=False)
